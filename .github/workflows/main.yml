@@ -13,5 +13,5 @@ jobs:
       run: echo Hello, world
     - name: Multi-line printer
       run: 
-        echo print1
-        echo print2
+        echo print1,
+        echo print2.
