@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  poplar:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Printer
+      run: echo Hello, world
+    - name: Multi-line printer
+      run: echo print1
+           echo print2
