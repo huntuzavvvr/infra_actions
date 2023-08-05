@@ -1,9 +1,8 @@
 name: CI
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+     - main
 jobs:
   poplar:
     runs-on: ubuntu-latest
@@ -12,6 +11,6 @@ jobs:
     - name: Printer
       run: echo Hello, world
     - name: Multi-line printer
-      run: 
+      run: |
         echo print1,
         echo print2.
