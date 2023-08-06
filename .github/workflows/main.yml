@@ -66,6 +66,7 @@ jobs:
           username: ${{ secrets.USER}}
           key: ${{ secrets.SSH_KEY }}
           script:
+            sudo apt get install docker
             sudo docker pull huntuzist/django
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 huntuzist/django
