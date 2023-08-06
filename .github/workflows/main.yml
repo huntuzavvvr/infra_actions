@@ -67,7 +67,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script:
             sudo apt install curl
-            curl -fsSL https://get.docker.com -o get-docker.sh
             sh get-docker.sh   
             sudo apt remove docker docker-engine docker.io containerd runc
             sudo apt update 
