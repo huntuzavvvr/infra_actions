@@ -66,6 +66,7 @@ jobs:
           username: ${{ secrets.USER}}
           key: ${{ secrets.SSH_KEY }}
           script:
+            apt install sudo
             sudo apt get install docker
             sudo apt-get update
             sudo apt-get upgrade
